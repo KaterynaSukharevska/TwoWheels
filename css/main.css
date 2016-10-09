@@ -1,0 +1,864 @@
+/*---------------------------------------------------------------------------
+    Project:        Two wheels
+    Version:        1.0
+    Author:         Kateryna Sukharevska
+------------------------------------------------------------------------------*/
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url('../fonts/BebasNeueBold.otf');
+    src: url('../fonts/BebasNeueBold.ttf');
+    src: url('../fonts/BebasNeueBold.eot');
+    src: url('../fonts/BebasNeueBold.svg');
+    src: url('../fonts/BebasNeueBold.woff');
+    src: url('../fonts/BebasNeueBold.woff2');
+}
+
+@font-face {
+    font-family: 'BebasNeueBook';
+    src: url('../fonts/BebasNeueBook.otf');
+    src: url('../fonts/BebasNeueBook.ttf');
+    src: url('../fonts/BebasNeueBook.eot');
+    src: url('../fonts/BebasNeueBook.svg');
+    src: url('../fonts/BebasNeueBook.woff');
+    src: url('../fonts/BebasNeueBook.woff2');
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #60606e;;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   My styles
+   ========================================================================== */
+
+body {
+    margin: 0 auto;
+    font-family: 'BebasNeueBold', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    transition: none !important;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+button:hover,
+button:focus,
+button:active {
+    outline: none;
+    -webkit-appearance: none;
+}
+
+/* Fullscreen section */
+
+.fullscreen {
+    background: url("../img/baner.jpg") top center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #062a6b;
+    opacity: 0.75;
+    z-index: 1;
+}
+
+.fullscreen .fullscreen-content {
+    z-index: 10;
+    position: relative;
+    padding: 25px 0 30px 0;
+    height: 100%;
+}
+
+.fullscreen .fullscreen-content .main-container {
+    position: relative;
+    z-index: 12;
+}
+
+.fullscreen .fullscreen-content header {
+    margin-bottom: 93px;
+}
+
+.fullscreen .fullscreen-content .logo {
+    display: block;
+    background: url("../img/logo.png") no-repeat;
+    width: 181px;
+    height: 86px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.fullscreen .fullscreen-content .advantages {
+    margin-bottom: 100px;
+}
+
+.fullscreen .fullscreen-content .advantage-one,
+.fullscreen .fullscreen-content .advantage-two,
+.fullscreen .fullscreen-content .advantage-tree {
+    text-align: center;
+}
+
+.fullscreen  .advantages .advantage-one-img,
+.fullscreen  .advantages .advantage-two-img,
+.fullscreen  .advantages .advantage-tree-img {
+    width: 181px;
+    height: 181px;
+    opacity: 0.76;
+    background-color: #ffc600;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.fullscreen .advantages .advantage-text p {
+    font: 18px 'Calibri Regular', Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+
+.fullscreen .contact-with-us {
+    text-align: center;
+}
+
+.fullscreen .contact-with-us button,
+footer .contact-form  button {
+    font: 30px 'BebasNeueBook', Helvetica, Arial, sans-serif;
+    color: #ffc600;
+    border: 2px solid #ffc600;
+    background: transparent;
+    border-radius: 30px;
+    padding: 13px 60px;
+    margin-bottom: 95px;
+    outline: none;
+}
+
+.fullscreen .contact-with-us button:hover,
+footer .contact-form  button:hover {
+    background: #ffc600;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.fullscreen .contact-with-us p {
+    font: 30px 'BebasNeueBook', Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.fullscreen .contact-with-us ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.fullscreen .contact-with-us .vk,
+.fullscreen .contact-with-us .inst,
+footer .location .vk,
+footer .location .inst {
+    display: block;
+    background: url("../img/vk.png") no-repeat;
+    width: 64px;
+    height: 36px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.fullscreen .contact-with-us .inst,
+footer .location .inst {
+    background: url("../img/inst.png") no-repeat;
+    background-size: 95% 95%;
+    width: 53px;
+    height: 53px;
+}
+
+.fullscreen .contact-with-us .vk {
+    margin-bottom: 7px;
+}
+
+.fullscreen .contact-with-us .vk:hover,
+footer .location .vk:hover {
+    background: url("../img/vk-hover.png") no-repeat;
+}
+
+.fullscreen .contact-with-us .inst:hover,
+footer .location .inst:hover {
+    background: url("../img/inst-hover.png") no-repeat;
+    background-size: 95% 95%;
+}
+
+.contact-with-us-arrow {
+    display: inline-block;
+}
+
+.fullscreen .contact-with-us .arrow {
+    position: relative;
+    cursor: pointer;
+    display: inherit;
+}
+.fullscreen .contact-with-us .arrow:after {
+    content:"";
+    display: block;
+    width: 72px;
+    height: 72px;
+    transform: rotateX(289deg) rotateZ(45deg);
+    border-right: 4px solid #ffc600;
+    border-bottom: 4px solid #ffc600;
+}
+.fullscreen .contact-with-us .arrow:before {
+    content:"";
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: -13px;
+    width: 100px;
+    height: 2px;
+    background: #ffc600;
+}
+
+/* About-as section*/
+
+.about-as {
+    background-image: url("../img/about-us.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    padding: 120px 0 50px 0;
+}
+
+.about-as p {
+    font: 19px 'Calibri Regular', Helvetica, Arial, sans-serif;
+    line-height: 24px;
+}
+
+/* Our courses section */
+
+.our-courses {
+    padding: 50px 0;
+}
+
+.our-courses .course {
+    max-width: 474px;
+    height: 242px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.our-courses .accelerated-course {
+    background: url("../img/kurs-one.jpg")  no-repeat bottom center;
+    background-size: cover;
+}
+
+.our-courses .normal-course {
+    background: url("../img/kurs-two.jpg")  no-repeat top center;
+    background-size: cover;
+}
+
+.our-courses h2 {
+    text-align: center;
+}
+
+.our-courses .first-look h2 {
+    text-shadow: -1px 1.7px 0 black;
+    color: white;
+    margin-bottom: 0;
+    position: absolute;
+    top: 37%;
+    right: 29%;
+    z-index: 100;
+}
+
+.our-courses a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.our-courses .first-look .base {
+    width: 75%;
+    height: 45px;
+    opacity: 0.5;
+    background-color: #112f65;
+    margin: 0 auto;
+    margin-bottom: 28px;
+
+}
+
+.our-courses  .for-hover {
+    overflow: hidden;
+}
+
+/*Hover effect*/
+
+.our-courses .hover-effect {
+    position: absolute;
+    top: 0;
+    height: 242px;
+    width: inherit;
+    max-width: 485px;
+    background-color: rgba(255,255,255,.8);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.our-courses .hover-effect p {
+    width: inherit;
+    font: 19px 'Calibri Regular', Helvetica, Arial, sans-serif;
+    color: #0f0f0f;
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.our-courses a:hover .base {
+    display: none;
+}
+.our-courses a:hover .hover-effect {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.our-courses a:hover h2 {
+    top: 20%;
+    color: #000000;
+    text-shadow: none;
+}
+
+/*Hover effect end*/
+
+/* Footer */
+
+footer {
+    background: url("../img/footer.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    height: 100%;
+}
+
+footer .overlay-footer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #494949;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+footer  .footer-content {
+    position: relative;
+    z-index: 10;
+}
+footer  .footer-content h2 {
+    margin: 50px 0 15px 0;
+    font-family: 'BebasNeueBold', Helvetica, Arial, sans-serif;
+
+}
+footer  .footer-content .contact-form p {
+    font: 21px 'Calibri Regular', Helvetica, Arial, sans-serif;
+    margin-bottom: 23px;
+}
+
+/*  Contact form */
+footer .contact-form {
+    font: 17px 'Calibri Regular', Helvetica, Arial, sans-serif;
+}
+
+footer .contact-form ::-webkit-input-placeholder {
+    color: #252525;
+}
+
+:-moz-placeholder {
+    color: #252525;
+}
+
+::-moz-placeholder {
+    color: #252525;
+}
+
+:-ms-input-placeholder {
+    color: #252525;
+}
+
+footer .contact-form .inline-wrap > .form-group {
+    display: inline-block;
+    margin: 0;
+}
+
+footer .contact-form #name,
+footer .contact-form #email {
+    height: 35px;
+    width: 281px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 0;
+    font-size: 17px;
+}
+
+footer .contact-form #name {
+    margin-right: 8.5px;
+}
+
+footer .contact-form #message {
+    width: 574px;
+    border: none;
+    margin: 0 auto;
+    border-radius: 0;
+    font-size: 17px;
+}
+
+footer .contact-form  button {
+    margin-bottom: 40px;
+    padding: 6px 31px;
+    border: 3px solid #ffc600;
+}
+
+/* Contact form end*/
+
+footer .location h2 {
+    margin-top: 0;
+}
+
+footer .location p,
+.contact-numbers  {
+    text-transform: uppercase;
+    font: 28px 'BebasNeueBook', Helvetica, Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.contact-numbers a {
+    color: #fff;
+}
+
+footer .location .vk {
+    background-size: 40% 40%;
+    margin-bottom: 13px;
+    margin-right: -24px;
+}
+
+footer .location .vk:hover {
+    background-size: 40% 40%;
+}
+
+footer .location .inst {
+    background-size: 40% 40%;
+}
+
+footer .location .inst:hover {
+    background-size: 40% 40%;
+}
+
+footer .location ul li {
+    display: inline-block;
+    margin-right: 0;
+}
+
+footer .maps {
+    margin-bottom: 30px;
+}
+
+footer .maps > iframe {
+    width: 100%;
+}
+
+/* Copyright */
+
+.copyright {
+    font-family: 'BebasNeueBook', Helvetica, Arial, sans-serif;
+    background: #ffc600;
+}
+
+.copyright .left {
+    font-size: 30px;
+}
+
+.copyright .right {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.copyright .right span {
+    color: #969285;
+}
+
+
+/*Modal window*/
+.modal {
+    min-height: 540px;
+    padding: 0 !important;
+}
+
+.modal-backdrop {
+    z-index: 1 !important;
+}
+
+.modal .modal-dialog {
+    margin: 130px auto 0 auto;
+}
+
+.modal .modal-content {
+    border-radius: 0;
+    padding: 15px;
+}
+
+.modal .modal-content h2 {
+    margin: 40px 0 35px 0;
+}
+
+.modal .modal-content button.close {
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    position: absolute;
+    color: #000000;
+    right: 7px;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: '';
+    height: 33px;
+    top: 0;
+    width: 2px;
+    background-color: #000;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.modal .modal-content button.close:hover {
+    background: none;
+}
+
+.modal .modal-content input#your-name,
+.modal .modal-content input#number {
+    width: 330px;
+    height: 43px;
+    border: 1px solid #000000;
+    border-radius: 0;
+    margin: 0 auto;
+    font: 20px 'Calibri Regular', Helvetica, Arial, sans-serif;
+}
+
+.modal .modal-content ::-webkit-input-placeholder {
+    color: #252525;
+}
+
+:-moz-placeholder {
+    color: #252525;
+}
+
+::-moz-placeholder {
+    color: #252525;
+}
+
+:-ms-input-placeholder {
+    color: #252525;
+}
+
+.modal .modal-content .choice {
+    margin-bottom: 30px;
+}
+
+.modal .modal-content .choice .form-group {
+    width: 330px;
+    margin: 10px auto;
+}
+
+.modal .modal-content .choice .form-group .checkbox-group {
+    float: left;
+}
+
+.modal .modal-content .choice label {
+    font: 20px 'Calibri Regular', Helvetica, Arial, sans-serif;
+}
+
+.modal .modal-content button {
+    color: #252525;
+    margin-bottom: 0;
+}
+
+.modal .modal-content label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 75px;
+    font-size: 13px;
+}
+
+.modal .modal-content input[type="radio"] {
+    /*display:none;*/
+    position: absolute;
+    left: -9999px;
+}
+
+.modal .modal-content input[type="radio"] + label {
+    display: inline-block;
+    width: 41px;
+    height: 35px;
+    vertical-align: middle;
+    line-height: 33px;
+    background: url('../img/input.png') 2px top no-repeat;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.modal .modal-content input[type="radio"]:checked + label {
+    background:url('../img/input-activ.png') 2px top no-repeat;
+}
+
+/* Info modal */
+
+.info-modal {
+    display: none;
+}
+
+.info-modal button.btn-default {
+    width: 55%;
+}
+
+/* Form validation errors */
+
+label.error {
+    padding: 0 !important;
+    color: #f95252 !important;
+}
+
+footer .form-group {
+    position: relative;
+}
+
+footer label.error {
+    color: #f95252 !important;
+    font-family: 'BebasNeueBold', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    position: absolute;
+    top: -19px;
+    right: 14px;
+}
+
+footer label#email-error {
+    right: 7px;
+}
+
+footer label#message-error {
+    top: 113px;
+    right: 26%;
+}
+
+input.error,
+footer textarea.error {
+    box-shadow: 0 1px 6px #f95252!important;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design
+   ========================================================================== */
+
+@media only screen and (min-width: 1200px) {
+    .about-as .container {
+        width: 970px;
+    }
+
+    .our-courses .container {
+        width: 970px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    /* Google maps widget */
+    .maps > iframe {
+        width: 95% !important;
+    }
+
+    .our-courses .first-look h2 {
+        right: 23%;
+    }
+}
+
+    @media only screen and (max-width: 768px) {
+    /* Google maps widget */
+    .maps > iframe {
+        width: 95% !important;
+    }
+}
+
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .our-courses .first-look h2 {
+        right: 29%;
+    }
+
+    .accelerated-course {
+        margin-bottom: 5px !important;
+    }
+
+    .advantages > .row > .col-xs-12 {
+        padding-top: 15px;
+    }
+
+    .fullscreen  .advantages .advantage-one-img,
+    .fullscreen  .advantages .advantage-two-img,
+    .fullscreen  .advantages .advantage-tree-img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .fullscreen  .advantages .advantage-one-img img,
+    .fullscreen  .advantages .advantage-two-img img,
+    .fullscreen  .advantages .advantage-tree-img img {
+        width: 40% !important;
+        height: 55% !important;
+    }
+
+    .fullscreen .advantages .advantage-text p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    footer .contact-form #message {
+        width: 78%;
+    }
+}
+
+@media only screen and (max-width: 622px) {
+    footer .contact-form #name {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 499px) {
+    .fullscreen  .advantages .advantage-one-img,
+    .fullscreen  .advantages .advantage-two-img,
+    .fullscreen  .advantages .advantage-tree-img {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .fullscreen  .advantages .advantage-one-img img,
+    .fullscreen  .advantages .advantage-two-img img,
+    .fullscreen  .advantages .advantage-tree-img img {
+        width: 40% !important;
+        height: 55% !important;
+    }
+
+    .fullscreen .advantages .advantage-text p {
+        font-size: 13px;
+    }
+}

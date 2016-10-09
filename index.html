@@ -1,0 +1,288 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Два колеса</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Main styles -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Scripts -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    </head>
+    <body>
+        <div class="wrapper main-page">
+
+            <section class="fullscreen">
+
+                <!-- Fullscreen section -->
+                <section class="fullscreen-content">
+
+                    <div class="overlay"></div>
+
+                    <div class="container main-container">
+
+                        <header>
+                            <div class="logo">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <a href="#">Два колеса</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+
+                        <div class="advantages">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <div class="advantage-one">
+                                        <div class="advantage-one-img">
+                                            <img src="img/banner-one.png" alt="img">
+                                        </div>
+                                        <div class="advantage-text">
+                                            <p>Персональные тренировки<br>с инструктором</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <div class="advantage-two">
+                                        <div class="advantage-two-img">
+                                            <img src="img/banner-two.png" alt="img">
+                                        </div>
+                                        <div class="advantage-text">
+                                            <p>Обучение методике<br>безопасной езды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                    <div class="advantage-tree">
+                                        <div class="advantage-tree-img">
+                                            <img src="img/banner-tree.png" alt="img">
+                                        </div>
+                                        <div class="advantage-text">
+                                            <p>Занятия проводят опытные<br>инструктора</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-with-us">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="contact-with-us-arrow">
+                                        <button data-toggle="modal" data-target="#myModal">Записаться на курс</button>
+
+                                        <!-- Modal form window -->
+                                        <div class="modal fade" id="myModal" role="dialog">
+                                            <div class="modal-dialog">
+
+                                                <!-- Modal form content-->
+                                                <div class="modal-content modal-form-content">
+                                                    <button type="button" class="close" data-dismiss="modal"></button>
+                                                    <h2 class="modal-title">Записаться на курс</h2>
+                                                    <form action="" method="post" id="course-form" class="form-horizontal" role="form" novalidate="novalidate">
+                                                        <div class="form-group">
+                                                            <input type="text" name="name" class="form-control" id="your-name" placeholder="Имя">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" name="phone" class="form-control" id="number" placeholder="Телефон">
+                                                        </div>
+                                                        <h2>Выберите курс</h2>
+                                                        <div class="choice">
+                                                            <div class="form-group">
+                                                                <div class="checkbox-group">
+                                                                    <input type="radio" name="course" value="1" id="accelerated-curs">
+                                                                    <label class="label-course" for="accelerated-curs">Ускоренный</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="checkbox-group">
+                                                                    <input type="radio" name="course" value="2" id="normal-curs" checked="checked">
+                                                                    <label class="label-course" for="normal-curs">Нормальный</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-default">Отправить заявку</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal form window end-->
+
+                                        <!-- Modal info window -->
+                                        <div class="info-modal modal">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content modal-form-content">
+                                                    <h2 class="modal-title">Заявка отправлена</h2>
+                                                    <button type="button" class="close"></button>
+                                                    <button type="button" class="btn btn-default">ОК</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal info window end-->
+
+                                        <p>Подписывайтесь, чтобы быть в курсе</p>
+                                        <ul>
+                                            <li><a href="#" class="vk">vk</a></li>
+                                            <li><a href="#" class="inst">inst</a></li>
+                                        </ul>
+                                        <div class="arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+
+            <!-- Fullscreen section end-->
+
+            <!-- About as section -->
+
+            <section class="about-as">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h2>О нас</h2>
+                            <p>В нашем городе все больше и больше набирает популярность мотокультура.<br>Которая с каждым годом привлекает к себе большое количество людей. Но, к<br>сожалению, с каждым годом растет статистика ДТП с участием мотоциклов.<br>В нашей мотошколе квалифицированные инструктора будут обучать вас езде<br>на мотоцикле по методикам мировых мотошкол.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About as section end-->
+
+            <!-- Our courses section -->
+
+            <section class="our-courses">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h2>Наши курсы</h2>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 for-hover">
+                            <div class="course accelerated-course">
+                                <a href="#" class="">
+                                    <div class="first-look">
+                                        <div class="base"></div>
+                                        <h2>Ускоренный курс</h2>
+                                    </div>
+                                    <div class="hover-effect">
+                                        <p>- 25 тренировок на площадке по часу с<br>инструктором. Правильная посадка на<br>мотоцикл, основы управления,<br>маневрирование на площадке, скоростное<br>маневрирование.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 for-hover">
+                            <div class="course normal-course">
+                                <a href="">
+                                    <div class="first-look">
+                                        <div class="base"></div>
+                                        <h2>Стандартный курс</h2>
+                                    </div>
+                                    <div class="hover-effect">
+                                        <p>- 15 тренировок на площадке по часу с<br>инструктором. Правильная посадка на<br>мотоцикл, основы управления,<br>маневрирование на площадке, скоростное<br>маневрирование.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our courses section end-->
+
+            <!-- Footer -->
+            <footer>
+                <div class="overlay-footer"></div>
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="contact-form">
+                                    <h2>Напишите нам</h2>
+                                    <p>Мы ответим на все ваши вопросы</p>
+
+                                    <form action="" method="post" id="contact-form" class="form-horizontal" role="form" novalidate="novalidate">
+                                        <div class="inline-wrap">
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control" id="name" placeholder="Имя">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <textarea id="message" name="message" class="form-control" placeholder="Сообщение" rows="4"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" value="submit">Отправить</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div class="location">
+                                    <h2>Адрес:</h2>
+                                    <p>Харьков, Украина, стадион "Металлист"</p>
+                                    <ul>
+                                        <li><a href="#" class="vk">vk</a></li>
+                                        <li><a href="#" class="inst">inst</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="container contact-numbers">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4"><a href="tel: +38 (093) 66-99-432">+38 (093) 66-99-432</a></div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4"><a href="tel: +38 (066) 555-58-42">+38 (066) 555-58-42</a></div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4"><a href="tel: +38 (098) 930-26-12">+38 (098) 930-26-12</a></div>
+                                </div>
+                            </div>
+
+                            <div class="maps">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.6933828722995!2d36.259806161418744!3d49.97960844864413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a085b770023f%3A0xce6e4c8b92d8cc62!2z0LLRg9C70LjRhtGPINCf0LvQtdGF0LDQvdGW0LLRgdGM0LrQsCwgNjUsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2sus!4v1468227253519" width="970" height="310" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer end-->
+
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="left">© All rights reserved</div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="right">Design: <span>Magicball8749@gmail.com</span> Front-end: <span>marmysha1405@gmail.com</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="js/bootstrap.js"></script>
+        <script src="js/vendor/jquery.validate.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
